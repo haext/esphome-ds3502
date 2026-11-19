@@ -1,17 +1,19 @@
-## External Component DS3502 for ESPHOME 2025.2.1 ->
+# External Component DS3502 for ESPHome
 
+# Installation
 
-Copy the folder `ds3502` which is located in `components` to the identical folder at your instance.
-Create your YAML and smile again - DS3502 is back and working in ESPHOME :)
+```
+external_components:
+  - source: github://haext/esphome-ds3502
+```
 
+# Examples
 
 > Example YAML:
 ```
 # Include the local components directory
 external_components:
-  - source: 
-      type: local
-      path: components
+  - source: github://haext/esphome-ds3502
 
 # I2C bus configuration
 i2c:
@@ -45,9 +47,7 @@ fan:
 ```
 # Include the local components directory
 external_components:
-  - source: 
-      type: local
-      path: components
+  - source: github://haext/esphome-ds3502
 
 # I2C bus configuration
 i2c:
